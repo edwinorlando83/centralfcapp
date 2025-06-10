@@ -1,0 +1,205 @@
+{
+  "actions": [],
+  "allow_rename": 0,
+  "autoname": "field:cedula_number",
+  "creation": "2025-06-10 03:16:32.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "basic_information_section",
+    "cedula_number",
+    "last_name_paternal",
+    "last_name_maternal",
+    "first_name",
+    "second_name",
+    "birth_date",
+    "gender",
+    "birthDate",
+    "complementary_information_section",
+    "full_cedula_id",
+    "home_address",
+    "location_reference",
+    "column_break_12",
+    "cedula_copy",
+    "cedula2",
+    "photo",
+    "card_code"
+  ],
+  "fields": [
+    {
+      "fieldname": "basic_information_section",
+      "fieldtype": "Section Break",
+      "label": "Datos Obligatorios"
+    },
+    {
+      "fieldname": "cedula_number",
+      "fieldtype": "Data",
+      "label": "N\u00famero de c\u00e9dula",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "last_name_paternal",
+      "fieldtype": "Data",
+      "label": "Apellido paterno",
+      "reqd": 1
+    },
+    {
+      "fieldname": "last_name_maternal",
+      "fieldtype": "Data",
+      "label": "Apellido materno",
+      "reqd": 1
+    },
+    {
+      "fieldname": "first_name",
+      "fieldtype": "Data",
+      "label": "Primer nombre",
+      "reqd": 1
+    },
+    {
+      "fieldname": "second_name",
+      "fieldtype": "Data",
+      "label": "Segundo nombre",
+      "reqd": 1
+    },
+    {
+      "fieldname": "birth_date",
+      "fieldtype": "Date",
+      "label": "Fecha de nacimiento",
+      "reqd": 1
+    },
+    {
+      "fieldname": "gender",
+      "fieldtype": "Select",
+      "label": "Género",
+      "options": "Masculino\nFemenino"
+    },
+    {
+      "fieldname": "birthDate",
+      "fieldtype": "Date",
+      "label": "Fecha de nacimiento (API)"
+    },
+    {
+      "fieldname": "complementary_information_section",
+      "fieldtype": "Section Break",
+      "label": "Datos Complementarios"
+    },
+    {
+      "fieldname": "full_cedula_id",
+      "fieldtype": "Data",
+      "label": "C\u00e9dula de identidad (n\u00famero completo)"
+    },
+    {
+      "fieldname": "home_address",
+      "fieldtype": "Small Text",
+      "label": "Direcci\u00f3n de domicilio"
+    },
+    {
+      "fieldname": "location_reference",
+      "fieldtype": "Small Text",
+      "label": "Referencia de ubicaci\u00f3n"
+    },
+    {
+      "fieldname": "column_break_12",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "cedula_copy",
+      "fieldtype": "Attach",
+      "label": "Copia de c\u00e9dula"
+    },
+    {
+      "fieldname": "cedula2",
+      "fieldtype": "Attach",
+      "label": "Copia de c\u00e9dula (reverso)"
+    },
+    {
+      "fieldname": "photo",
+      "fieldtype": "Attach Image",
+      "label": "Fotograf\u00eda tama\u00f1o carnet"
+    },
+    {
+      "fieldname": "card_code",
+      "fieldtype": "Data",
+      "label": "C\u00f3digo de carnet",
+      "permlevel": 1
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2025-06-10 03:16:32.000000",
+  "modified_by": "Administrator",
+  "module": "Central FC",
+  "name": "Player",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 0,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "Player Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 0,
+      "email": 1,
+      "export": 0,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "Player User",
+      "share": 0,
+      "write": 1,
+      "permlevel": 0
+    },
+    {
+      "create": 0,
+      "delete": 0,
+      "email": 0,
+      "export": 0,
+      "print": 0,
+      "read": 1,
+      "report": 0,
+      "role": "Player User",
+      "share": 0,
+      "write": 0,
+      "permlevel": 1
+    },
+    {
+      "create": 1,
+      "delete": 0,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "Player Manager",
+      "share": 1,
+      "write": 1,
+      "permlevel": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 1
+}
