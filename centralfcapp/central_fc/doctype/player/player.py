@@ -25,7 +25,7 @@ def get_cedula(identificacion):
     url = "https://s123-cat-pro.azurewebsites.net/comparator/api/catalogs/person"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {token_free}"
+          "Authorization": f"Bearer {token_free}"
     }
  
     body = {
@@ -37,7 +37,7 @@ def get_cedula(identificacion):
         response.raise_for_status()  # Lanza una excepción para códigos de error 4xx o 5xx
         return response.json()
     except requests.exceptions.RequestException as e:
-        frappe.throw(f"Error al llamar a la API:{token_free} {e}")
+        frappe.throw(f"Error al llamar a la API: {e}")
         return None
 
  

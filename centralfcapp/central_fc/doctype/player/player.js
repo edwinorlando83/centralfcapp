@@ -1,4 +1,4 @@
- 
+
 
 frappe.ui.form.on("Player", {
   refresh: (frm) => {
@@ -15,17 +15,20 @@ frappe.ui.form.on("Player", {
         frappe.msgprint(__("Por favor ingrese un número de cédula primero"))
         return
       }
-//\\kento15\frappe-bench\apps\centralfcapp\centralfcapp\central_fc\doctype\player\player.py
+   
       frappe.call({
         method: "centralfcapp.central_fc.doctype.player.player.get_cedula",
+        freeze: true,
+        freeze_message: "Buscando cedula...",
+        freeze_bg: "Blue",
         args: {
           identificacion: frm.doc.cedula_number,
         },
         callback: (r) => {
-          console.log(r.message);
-          if (r.message   && r.message.message.data) {
-            const data = r.message.message.data
 
+          if (r.message ) {
+            const data = r.message.data;
+            console.log("===>",data);
             // Actualizar campos con la información obtenida
             frm.set_value("first_name", data.names.split(" ")[0])
             if (data.names.split(" ").length > 1) {
@@ -34,8 +37,8 @@ frappe.ui.form.on("Player", {
             frm.set_value("last_name_paternal", data.firstLastName)
             frm.set_value("last_name_maternal", data.secondLastName)
             frm.set_value("gender", data.gender)
-            frm.set_value("birthDate", data.birthDate)
-
+            frm.set_value("birth_date", data.birthDate)
+            frm.refresh_fields()
             frappe.show_alert(
               {
                 message: __("Información de cédula cargada correctamente"),
