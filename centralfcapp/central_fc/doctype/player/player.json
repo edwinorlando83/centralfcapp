@@ -14,7 +14,6 @@
   "birth_date",
   "gender",
   "complementary_information_section",
-  "full_cedula_id",
   "home_address",
   "location_reference",
   "column_break_12",
@@ -82,11 +81,6 @@
    "label": "Datos Complementarios"
   },
   {
-   "fieldname": "full_cedula_id",
-   "fieldtype": "Data",
-   "label": "C\u00e9dula de identidad (n\u00famero completo)"
-  },
-  {
    "fieldname": "home_address",
    "fieldtype": "Small Text",
    "label": "Direcci\u00f3n de domicilio"
@@ -124,7 +118,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-10 05:01:37.165449",
+ "modified": "2025-06-10 05:04:01.623920",
  "modified_by": "Administrator",
  "module": "Central FC",
  "name": "Player",
