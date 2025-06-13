@@ -1,0 +1,38 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"RBStxfWAEF\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">MENU</span>\",\"col\":12}},{\"id\":\"1Q6tGEJwsg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Jugadores\",\"col\":3}}]",
+ "creation": "2025-06-13 16:29:06.276900",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "menu",
+ "idx": 0,
+ "indicator_color": "blue",
+ "is_hidden": 0,
+ "label": "MENU",
+ "links": [],
+ "modified": "2025-06-13 16:36:01.604073",
+ "modified_by": "Administrator",
+ "module": "Central FC",
+ "name": "MENU",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Jugadores",
+   "link_to": "Player",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "MENU"
+}

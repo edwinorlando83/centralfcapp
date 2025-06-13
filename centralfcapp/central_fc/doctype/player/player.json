@@ -13,14 +13,18 @@
   "second_name",
   "birth_date",
   "gender",
+  "column_break_ltsb",
+  "full_name",
+  "nombre_camiseta",
+  "numero_camiseta",
+  "card_code",
   "complementary_information_section",
   "home_address",
   "location_reference",
   "column_break_12",
   "cedula_copy",
   "cedula2",
-  "photo",
-  "card_code"
+  "photo"
  ],
  "fields": [
   {
@@ -39,21 +43,18 @@
   {
    "fieldname": "last_name_paternal",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Apellido paterno",
    "reqd": 1
   },
   {
    "fieldname": "last_name_maternal",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Apellido materno",
    "reqd": 1
   },
   {
    "fieldname": "first_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Primer nombre",
    "reqd": 1
   },
@@ -70,6 +71,7 @@
    "reqd": 1
   },
   {
+   "default": "Masculino",
    "fieldname": "gender",
    "fieldtype": "Select",
    "label": "G\u00e9nero",
@@ -114,11 +116,31 @@
    "fieldtype": "Data",
    "label": "C\u00f3digo de carnet",
    "permlevel": 1
+  },
+  {
+   "fieldname": "column_break_ltsb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nombre_camiseta",
+   "fieldtype": "Data",
+   "label": "Nombre en la camiseta"
+  },
+  {
+   "fieldname": "numero_camiseta",
+   "fieldtype": "Data",
+   "label": "# Camiseta"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Nombre Completo"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-10 05:04:01.623920",
+ "modified": "2025-06-13 16:38:09.565233",
  "modified_by": "Administrator",
  "module": "Central FC",
  "name": "Player",
@@ -175,8 +197,10 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "full_name",
  "track_changes": 1
 }
