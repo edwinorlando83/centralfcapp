@@ -17,7 +17,7 @@ class Player(Document):
     
     def set_full_name(self):
         # Crear un nombre completo para mostrar en las listas
-        self.full_name = f"{self.last_name_paternal} {self.last_name_maternal}, {self.first_name} {self.second_name or ''}"
+        self.full_name = f"{self.last_name_paternal} {self.last_name_maternal} {self.first_name} {self.second_name or ''}"
 
 @frappe.whitelist()
 def get_cedula(identificacion):
