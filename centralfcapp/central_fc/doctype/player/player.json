@@ -158,7 +158,8 @@
    "default": "0",
    "fieldname": "juvenil",
    "fieldtype": "Check",
-   "label": "Juvenil"
+   "label": "Juvenil",
+   "read_only": 1
   },
   {
    "fieldname": "tipo",
@@ -169,7 +170,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-16 12:33:12.008985",
+ "modified": "2025-06-16 15:05:14.005829",
  "modified_by": "Administrator",
  "module": "Central FC",
  "name": "Player",
