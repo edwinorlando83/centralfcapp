@@ -130,7 +130,8 @@
   {
    "fieldname": "numero_camiseta",
    "fieldtype": "Data",
-   "label": "# Camiseta"
+   "label": "# Camiseta",
+   "unique": 1
   },
   {
    "fieldname": "full_name",
@@ -147,7 +148,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-13 17:00:02.610906",
+ "modified": "2025-06-13 17:22:18.137831",
  "modified_by": "Administrator",
  "module": "Central FC",
  "name": "Player",
