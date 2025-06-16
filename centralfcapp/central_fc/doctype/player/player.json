@@ -19,6 +19,8 @@
   "numero_camiseta",
   "card_code",
   "talla",
+  "tipo",
+  "juvenil",
   "estado",
   "complementary_information_section",
   "home_address",
@@ -151,11 +153,23 @@
    "fieldtype": "Select",
    "label": "Estado",
    "options": "ACTIVO\nINACTIVO\nEN PROCESO"
+  },
+  {
+   "default": "0",
+   "fieldname": "juvenil",
+   "fieldtype": "Check",
+   "label": "Juvenil"
+  },
+  {
+   "fieldname": "tipo",
+   "fieldtype": "Select",
+   "label": "Tipo",
+   "options": "NACIONAL\nEXTRANJERO\nREFUERZO"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-16 12:06:49.600690",
+ "modified": "2025-06-16 12:33:12.008985",
  "modified_by": "Administrator",
  "module": "Central FC",
  "name": "Player",
