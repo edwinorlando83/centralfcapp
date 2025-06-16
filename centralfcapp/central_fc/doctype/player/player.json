@@ -19,6 +19,7 @@
   "numero_camiseta",
   "card_code",
   "talla",
+  "estado",
   "complementary_information_section",
   "home_address",
   "location_reference",
@@ -144,11 +145,17 @@
    "fieldtype": "Select",
    "label": "Talla de Camiseta",
    "options": "28\n30\n32\n34\n36\n38\n40\n42"
+  },
+  {
+   "fieldname": "estado",
+   "fieldtype": "Select",
+   "label": "Estado",
+   "options": "ACTIVO\nINACTIVO\nEN PROCESO"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-13 17:22:18.137831",
+ "modified": "2025-06-16 12:06:49.600690",
  "modified_by": "Administrator",
  "module": "Central FC",
  "name": "Player",
