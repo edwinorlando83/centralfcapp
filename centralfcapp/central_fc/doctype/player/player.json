@@ -22,6 +22,7 @@
   "tipo",
   "juvenil",
   "estado",
+  "tipo_inscripcion",
   "complementary_information_section",
   "home_address",
   "location_reference",
@@ -166,11 +167,18 @@
    "fieldtype": "Select",
    "label": "Tipo",
    "options": "NACIONAL\nEXTRANJERO\nREFUERZO"
+  },
+  {
+   "default": "NUEVO",
+   "fieldname": "tipo_inscripcion",
+   "fieldtype": "Select",
+   "label": "Tipo Inscripci\u00f3n",
+   "options": "NUEVO\nRENOVACI\u00d3N"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-16 15:05:14.005829",
+ "modified": "2025-07-01 17:08:00.562135",
  "modified_by": "Administrator",
  "module": "Central FC",
  "name": "Player",
